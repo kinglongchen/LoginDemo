@@ -1,12 +1,12 @@
 <?php
 	include('../user.php');
 	islogin();
-	$modulecode=1;
-	$actioncode=0;
+	$modulecode=12;
+	$action=0;
 	$userid = $_SESSION['userid'];
 	$user = new User($userid);
-	if(check($user,$modulecode,$actioncode))
+	if(check($user,$modulecode,$action))
 		header("Location:http://www.baidu.com");
 	else 
-		header("Location:/LoginDemo/index.html");
+		header("Location:/LoginDemo/index.php");
 ?>
