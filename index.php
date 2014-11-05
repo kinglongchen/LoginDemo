@@ -35,7 +35,7 @@ $modules = $user->getCateLog();
 ?>
 
 
-<body style="margin:0;">
+<body style="margin:0; overflow-y:hidden;">
     <div style="width:280px;height:100%;position:absolute;left:0;" >
         <!--<iframe   style="width:280px;height:100%;border:0;overflow-x:hidden;" src="sidemenubar.php"></iframe>-->
         <form method="post" action="/zh-cn/cn/business" id="ctl17"  >
@@ -71,11 +71,16 @@ $modules = $user->getCateLog();
                         
 					</ul>
 
+                    <li class="discover" >
+                        <a class="flip" href="http://www.baidu.com" style="height:60px;">
+                            <span class="icon" style="width:40px; top:18px">
+                                退出
+                            </span>
+                        </a>
+                    </li>
+
 			</div>
 		</li>
-        
-
-        
 
 	</ul>
 </nav>
@@ -93,7 +98,7 @@ $modules = $user->getCateLog();
 	
 
     </iframe>-->
-	<iframe id="Ana_iframe" class="7" name="anaframe" width= "100%" height="810" style="border:0;margin:0 0 0 0;"></iframe>
+	<iframe id="Ana_iframe" class="7" name="anaframe" width= "100%" height="100%" style="border:0;margin:0 0 0 0;"></iframe>
      </div>
 </body>
 </html>

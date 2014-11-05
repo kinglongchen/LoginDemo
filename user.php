@@ -197,5 +197,5 @@ function check($user,$modulecode,$actioncode) {
 	
 		return $user->check($module,$action);
 	}
-echo !check(new User(1),1,0);
+//echo !check(new User(1),1,0);
 ?>

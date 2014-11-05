@@ -1340,7 +1340,7 @@ body.flip {
     -ms-transform: translate3d(0, 0, 0);
     -o-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
-    background: #191B1F;
+    background: #1c88ec;
     bottom: 0;
     position: absolute;
     top: 0;
@@ -1349,7 +1349,7 @@ body.flip {
       z-index: 10004; }
     .navigation-main .primary:after {
       content: '';
-      background-color: #191B1F;
+      background-color: #333333;
       bottom: 0;
       height: 100%;
       left: 0;
@@ -1446,7 +1446,7 @@ body.flip {
         border-bottom: 1px solid #00b1ee; }
       .navigation-main .primary .high.selected:hover {
         color: #5a6273;
-        background-color: #f2f6f7;
+        background-color: #f9f9f9;
         border-color: #f2f6f7; }
       .navigation-main .primary .high.hassub:hover {
         background-color: #f2f6f7;
@@ -1482,8 +1482,7 @@ body.flip {
         background-color: #01b1ed;
         color: white; }
     .navigation-main .primary .flip {
-      background-color: #1f2228;
-      border-top: 1px solid #262930;
+      background-color: #00b1ee;
       bottom: 0px;
       position: absolute;
       width: 100%;
@@ -1491,11 +1490,10 @@ body.flip {
       .navigation-main .primary .flip .label {
         font-size: 14px; }
       .navigation-main .primary .flip:hover {
-        color: white;
-        background-color: #272b33;
-        border-top: 1px solid #2d313b; }
+        color:#5a6273;
+        background-color:#f2f6f7;}
       .navigation-main .primary .flip .icon {
-        font-size: 40px;
+        font-size: 12px;
         left: 45px; }
 
     .navigation-main .primary .social {
