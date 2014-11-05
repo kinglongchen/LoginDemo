@@ -1,4 +1,4 @@
-/*! jQuery v1.9.1 | (c) 2005, 2012 jQuery Foundation, Inc. | jquery.org/license
+﻿/*! jQuery v1.9.1 | (c) 2005, 2012 jQuery Foundation, Inc. | jquery.org/license
 //@ sourceMappingURL=jquery.min.map
 */
 //     (c) 2009-2013 Jeremy Ashkenas, DocumentCloud Inc.
@@ -8243,8 +8243,8 @@ function () {
 }), define("Views/Components/jump-nav", ["jquery", "underscore", "AppModel", "Base", "Modules/notification-dispatcher"], function (e, t, n, r, i) {
     var s = r.extend({
         OPEN_DELAY: 0,
-        CLOSE_DELAY: 500,
-        SCROLL_DURATION: 500,
+        CLOSE_DELAY: 0,
+        SCROLL_DURATION: 100,
         SCROLL_DEBOUNCE: 50,
         $html: null,
         $win: null,
@@ -8661,7 +8661,7 @@ function () {
     return r
 }), define("Views/Components/homepage-tile-carousel", ["jquery", "underscore", "Base", "TweenMax"], function (e, t, n, r) {
     var i = n.extend({
-        DELAY: 3500,
+        DELAY: 100,
         $items: null,
         $pips: null,
         index: null,
@@ -8791,14 +8791,14 @@ function () {
         initialize: function (i) {
             t.bindAll(this, "onScroll"), r.prototype.initialize.apply(this, arguments), this.$doc = document.documentElement, this.$body = n.get("body"), this.$win = n.get("win"), this.$container = this.$el.find(".tile-container"), this.$tiles = this.$el.find(".tile"), this.$loadMore = this.$el.find(".load-more"), this.$tileContainer = e(".tile-container"), this.$tileAmount = this.$tileContainer.data("tiles-count"), this.startIndex = this.$tileContainer.find(".tile").not(".spacer").length, this.subviews = {}, this.subviews.heroCarousel = new o({
                 el: "#homepage-hero-marquee",
-                delay: 4500
+                delay: 50
             });
             var u = e(".tile.carousel");
             if (u.length) {
                 var a = u.length;
                 while (--a > -1) this.subviews[u[a].id] = new s({
                     el: "#" + u[a].id,
-                    delay: 3500
+                    delay: 50
                 })
             }
             this.bgColors = ["blue", "yellow", "green", "pink", "yellow"];
@@ -11229,16 +11229,16 @@ function () {
         events: {
             mousewheel: "onMouseWheel"
         },
-        removeActiveDelay: 300,
+        removeActiveDelay: 100,
         currentPosition: 0,
         initialize: function () {
             t.bindAll(this, "onBarClicked", "onMouseDown", "onMouseOver", "onMouseOut", "onMouseMove", "onMouseUp", "removeActiveClass", "onMouseEnter", "onMouseLeave"), this.content = this.$(this.options.contentClass), this.bar = e(this.options.template), this.dragger = this.bar.find(".scrolldragger"), this.body = n.get("body"), this.isMouseDown = !1, this.isMouseOver = !1, this.draggerOffset = 0, this.refresh()
         },
         bindEvents: function () {
             this.delegateEvents(), this.bar.on("mousedown." + this.cid, this.onBarClicked), this.dragger.on("mousedown." + this.cid, this.onMouseDown), this.dragger.on("mouseover." + this.cid, this.onMouseOver), this.dragger.on("mouseout." + this.cid, this.onMouseOut), this.$el.on("mouseenter." + this.cid, t.bind(function (e) {
-                clearTimeout(this.leaveDelay), this.enterDelay = setTimeout(this.onMouseEnter, 300)
+                clearTimeout(this.leaveDelay), this.enterDelay = setTimeout(this.onMouseEnter, 50)
             }, this)), this.$el.on("mouseleave." + this.cid, t.bind(function (e) {
-                clearTimeout(this.enterDelay), this.leaveDelay = setTimeout(this.onMouseLeave, 300)
+                clearTimeout(this.enterDelay), this.leaveDelay = setTimeout(this.onMouseLeave, 50)
             }, this))
         },
         unbindEvents: function () {
