@@ -1441,9 +1441,9 @@ body.flip {
       border-bottom: 1px solid #262a30;
       text-transform: uppercase; }
       .navigation-main .primary .high.selected {
-        background-color: #00b1ee;
-        border-top: 1px solid #00b1ee;
-        border-bottom: 1px solid #00b1ee; }
+        background-color: #39F;
+        border-top: 1px solid #39F;
+        border-bottom: 1px solid #39F; }
       .navigation-main .primary .high.selected:hover {
         color: #5a6273;
         background-color: #f9f9f9;
@@ -1482,7 +1482,7 @@ body.flip {
         background-color: #01b1ed;
         color: white; }
     .navigation-main .primary .flip {
-      background-color: #00b1ee;
+      background-color: #39F;
       bottom: 0px;
       position: absolute;
       width: 100%;
@@ -1687,7 +1687,9 @@ body.flip {
           top: 12px;
           margin: 0 -15px 0 -7px; }
       .navigation-main .sub a:hover {
-        background-color: white; }
+        background-color: #39F;
+		color:#fff;
+		font-size:24px; }
         .navigation-main .sub a:hover .callout span {
           color: #02a7e0; }
   .navigation-main .hover .sub {
