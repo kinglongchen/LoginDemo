@@ -59,7 +59,7 @@ $modules = $user->getCateLog();
 					<ul class="scrollable-content">
 						
                         <li style="text-align:center;background:#39F;height:40px; line-height:40px;">
-							<span style="font-size:18px;color:#fff;" >当前用户：叶徐波</span>
+							<span style="font-size:18px;color:#fff;" >当前用户：<?php echo $user->getUsername();?></span>
                         </li>
                         
                         <?php
