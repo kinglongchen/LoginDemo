@@ -8,5 +8,5 @@
 	if(check($user,$modulecode,$action))
 		header("Location:http://www.sina.com.cn/");
 	else 
-		header("Location:/LoginDemo/index.php");
+		echo '&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp无此权限！可点击此处 <a href="/LoginDemo/login.html" target="_blank">重新登录</a>';
 ?>

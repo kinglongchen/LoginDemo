@@ -72,7 +72,7 @@ $modules = $user->getCateLog();
 					</ul>
 
                     <li class="discover" >
-                        <a class="flip" href="http://www.baidu.com" style="height:60px;">
+                        <a class="flip" href="/LoginDemo/login.php?action=logout" style="height:60px;">
                             <span class="icon" style="width:40px; top:18px">
                                 退出
                             </span>
