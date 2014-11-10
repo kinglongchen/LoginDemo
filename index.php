@@ -37,7 +37,7 @@ $modules = $user->getCateLog();
 
 <body style="margin:0; overflow-y:hidden;">
     <div style="width:280px;height:100%;position:absolute;left:0;" >
-        <!--<iframe   style="width:280px;height:100%;border:0;overflow-x:hidden;" src="sidemenubar.php"></iframe>-->
+        <!--<iframe   style="width:280px;height:100%;border:0;" src="sidemenubar.php"></iframe>-->
         <form method="post" action="/zh-cn/cn/business" id="ctl17"  >
 
         <div class="container">
@@ -58,6 +58,9 @@ $modules = $user->getCateLog();
 			<div class="business sub">                    				
 					<ul class="scrollable-content">
 						
+                        <li style="text-align:center;background:#39F;height:40px; line-height:40px;">
+							<span style="font-size:18px;color:#fff;" >当前用户：叶徐波</span>
+                        </li>
                         
                         <?php
 							foreach($modules as $key=>$value) {
